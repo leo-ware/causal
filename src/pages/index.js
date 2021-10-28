@@ -7,29 +7,23 @@ import Button from "../components/button"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Gatsby Starter Personal Website"
+    const siteTitle = "Hi, I'm Leo"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={["causal inference", "statistics", "data science"]}
         />
-        <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
-        <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
-        </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
+        <h1>This is my site.</h1>
         <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
+          For my undergraduate capstone, I'm doing research into causal
+          inference in observational datasets. As I do my literature review, I
+          am writing summaries of important papers and collecting them here.
         </p>
-        <p>Now go build something great!</p>
+
         <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
+          <Button marginTop="35px">Continue!</Button>
         </Link>
       </Layout>
     )
